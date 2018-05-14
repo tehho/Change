@@ -1,13 +1,14 @@
-﻿
+﻿using System;
+
 using static System.Console;
 
-namespace Change
+namespace Change7_1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var change = new ChangeMaker_Tuple();
+            ChangeMaker change = new ChangeMaker();
 
             var result = change.Change(50, 100);
 
@@ -15,9 +16,7 @@ namespace Change
 
             WriteLine("Press any key to continue...");
             ReadKey();
-
         }
-
-
     }
+
 }
